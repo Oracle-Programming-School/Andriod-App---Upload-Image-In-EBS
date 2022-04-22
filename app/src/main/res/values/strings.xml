@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Item Code Pics</string>
+    <string name="text">Sapphire</string>
+    <string name="MainTextView1">Sapphire Retail Limited</string>
+    <string name="LoginBtn">login</string>
+    <item name="editusername" type="id" />
+    <item name="editpassword" type="id" />
+    <item name="btn" type="id" />
+    <string name="textsize">40dp</string>
+    <item name="btn2" type="id" />
+    <item name="secondtextView" type="id" />
+    <item name="search" type="id" />
+    <item name="searchbtn" type="id" />
+
+
+    <string name="button_camera_open">button_camera_open</string>
+
+
+</resources>

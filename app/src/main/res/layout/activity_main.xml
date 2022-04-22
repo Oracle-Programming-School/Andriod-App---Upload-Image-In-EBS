@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/MainTextView1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/MainUserName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:textColorHint="#581845">
+
+        <TextView
+            android:id="@+id/TVuserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MainUserName"
+            android:text="Username"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@id/editusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVuserName"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/username_icon"
+            android:drawablePadding="10dp"
+            android:hint="example.username"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TVpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editusername"
+            android:text="Password"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editusername"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/password_icon"
+            android:drawablePadding="10dp"
+            android:hint="............"
+            android:inputType="textPassword" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/MainUserName"
+            android:padding="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainLoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_red"
+                android:text="Login"
+                android:textColor="@android:color/white" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

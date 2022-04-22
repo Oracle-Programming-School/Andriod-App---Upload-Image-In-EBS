@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/dialogCornerRadius"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/secondlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/secondtextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Sapphire Retail Limited"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/secondlinear"
+        android:layout_marginTop="10dp">
+
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Item Code"
+            android:iconifiedByDefault="false"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+
+        </SearchView>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ItemCodeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearSearchView"
+        >
+
+
+    </ListView>
+
+
+
+
+</RelativeLayout>

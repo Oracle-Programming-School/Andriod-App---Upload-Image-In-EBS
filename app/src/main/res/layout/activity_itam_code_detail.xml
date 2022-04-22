@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItamCodeDetail">
+
+    <TextView
+        android:id="@+id/textitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/header"
+        android:textColor="@color/white"
+        android:hint="Item Code"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textitem"
+        android:gravity="center"
+        android:hint="Description"
+        android:textSize="14sp"
+        android:textStyle="normal">
+
+    </TextView>
+
+<ImageView
+    android:id="@+id/ItemCode_Image_Display"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_below="@id/textDescription"
+    android:layout_marginTop="30dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_image_black_24dp">
+</ImageView>
+
+
+    <Button
+        android:id="@+id/Capture_Imgae_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ItemCode_Image_Display"
+        android:layout_marginTop="39dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_rounded_red"
+        android:text="Capture Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp">
+
+    </Button>
+
+</RelativeLayout>
